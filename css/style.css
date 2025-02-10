@@ -40,12 +40,11 @@ h2 {
 
 
 img {
-   max-width: 100%;
+   width: 100%;
 }
 
 
 .info {
-    display: flex;
     background-color: #ffffff;
     box-shadow: rgba(43, 42, 42, 0.35) 0px 3px 5px;
     padding-left: 40px;
@@ -80,15 +79,20 @@ h3 {
         display: inline;
     }
 
-    .lista {
-        
+   .info {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+    
     }
 
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
    
+    .list {
+        width: calc(100% / 3 );
+    }
 
 
 }
@@ -96,22 +100,25 @@ h3 {
 
 @media screen and (min-width: 992px) {
 
-    .container {
+     .container {
         display: flex;
-        flex-wrap: nowrap;
-        max-width: 100%;
     }
 
     ul { 
-    
         line-height: 30px;
     }
 
-    .info {
-        width: 25%;
+    img {
+        width: 70%;
     }
 
-    
+    ul .list {
+        width: 100%;
+    }
+
+    .info {
+        width: 30%;
+    } 
 
 }
   
