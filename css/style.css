@@ -38,13 +38,11 @@ h2 {
     display: none;
 }
 
+
 img {
-    width: 100%;
+   max-width: 100%;
 }
 
-.imgyt {
-    display: flex;
-}
 
 .info {
     display: flex;
@@ -64,6 +62,12 @@ h3 {
     padding: 30px 0px;
 }
 
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 /* Responsive layout */
 
  @media screen and (min-width: 768px) {
@@ -75,5 +79,39 @@ h3 {
     .title {
         display: inline;
     }
+
+    .lista {
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+   
+
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 100%;
+    }
+
+    ul { 
+    
+        line-height: 30px;
+    }
+
+    .info {
+        width: 25%;
+    }
+
+    
+
 }
   
